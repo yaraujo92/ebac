@@ -2,21 +2,25 @@
 
 O código fornecido é um programa simples de calculadora interativa em Python, que permite ao usuário realizar operações matemáticas básicas em dois números fornecidos. Abaixo está uma explicação detalhada do que cada parte do código faz:
 
-1. Apresentação
+1. Apresentação:
+   
 print("🧮 Bem-vindo à Calculadora Python!")
 Exibe uma mensagem de boas-vindas ao usuário, indicando o propósito do programa.
 
-3. Laço while True
+3. Laço while True:
+   
 while True:
 Cria um laço infinito, o que significa que o programa continuará rodando até que uma condição de saída seja atendida (neste caso, o usuário escolher sair).
 
-5. Entrada de Dados
+5. Entrada de Dados:
+   
 num1 = float(input("Digite o primeiro número: "))
 num2 = float(input("Digite o segundo número: "))
 Solicita ao usuário dois números para realizar as operações.
 A função input() captura o valor digitado como texto, e o float() o converte para número decimal.
 
-7. Exibição das Opções de Operação
+7. Exibição das Opções de Operação:
+   
 print("\nEscolha a operação que deseja realizar:")
 print("1. Adição (+)")
 print("2. Subtração (-)")
@@ -24,13 +28,15 @@ print("3. Multiplicação (*)")
 print("4. Divisão (/)")
 print("5. Sair")
 Mostra um menu de opções para que o usuário escolha a operação matemática desejada ou a opção de sair do programa.
+-
 
-9. Escolha da Operação
+9. Escolha da Operação:
+    
 escolha = input("Digite o número da operação: ")
 Captura a escolha do usuário como texto para verificar qual operação deve ser executada.
-10. Realização da Operação
+11. Realização da Operação
 Cada bloco de código realiza a operação correspondente com base na escolha do usuário.
-
+-
 Adição (Escolha 1)
 if escolha == '1':
     print(f"\nResultado: {num1} + {num2} = {num1 + num2}")
