@@ -1,0 +1,42 @@
+# Início do programa
+print("🧮 Bem-vindo à Calculadora Python!")
+
+while True:
+    # Entrada de dados
+    num1 = float(input("Digite o primeiro número: "))
+    num2 = float(input("Digite o segundo número: "))
+
+    # Exibindo opções de operações
+    print("\nEscolha a operação que deseja realizar:")
+    print("1. Adição (+)")
+    print("2. Subtração (-)")
+    print("3. Multiplicação (*)")
+    print("4. Divisão (/)")
+    print("5. Sair")
+
+    # Entrada da operação desejada
+    escolha = input("Digite o número da operação: ")
+
+    # Realizando a operação escolhida
+    if escolha == '1':
+        print(f"\nResultado: {num1} + {num2} = {num1 + num2}")
+    elif escolha == '2':
+        print(f"\nResultado: {num1} - {num2} = {num1 - num2}")
+    elif escolha == '3':
+        print(f"\nResultado: {num1} * {num2} = {num1 * num2}")
+    elif escolha == '4':
+        if num2 != 0:
+            print(f"\nResultado: {num1} / {num2} = {num1 / num2}")
+        else:
+            print("\nErro: Divisão por zero não é permitida!")
+    elif escolha == '5':
+        print("\nObrigado por usar a calculadora! Até a próxima! 🖥️")
+        break
+    else:
+        print("\nOpção inválida! Por favor, tente novamente.")
+
+    # Perguntar ao usuário se deseja continuar
+    continuar = input("\nDeseja realizar outra operação? (s/n): ").lower()
+    if continuar != 's':
+        print("\nObrigado por usar a calculadora! 🖥️")
+        break
